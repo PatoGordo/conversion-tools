@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1"  />
+        
+        <link rel="stylesheet" href="css/styles.css" type="text/css" media="all" />
+        <link rel="stylesheet" href="../../src/css/styles.css" type="text/css" media="all" />
+        <link rel="stylesheet" href="../../src/css/navbar.css" type="text/css" media="all" />
+
+        
+        <script type="module" src="https://unpkg.com/ionicons@5.2.3/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule="" src="https://unpkg.com/ionicons@5.2.3/dist/ionicons/ionicons.js"></script>
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+        
+        <title> Conversion Tools - Miles to Kilometers / Kilometers to Miles </title>
+        
+        <script src="../../src/js/navbar.alt.js" type="text/javascript" charset="utf-8"></script>
+    </head>
+    <body>
+        <div id="root" class="root">
+            <div id="navbar"></div>
+            <div class="converter mikm" id="mi-to-km">
+                <div class="form mi">
+                    <h1 class="title mi">Convert Miles to Kilometers</h1>
+                    <div id="result mi">
+                        <h2 class="result value mi" id="result-mi">Result: </h2>
+                    </div>
+                    <div class="inputbox mi">
+                        <label for="input-mi"><i class="fal fa-map-marked-alt"></i></label>
+                        <input type="number" id="input-mi" class="input" placeholder="Mi to Km" />
+                    </div>
+                    <button type="button" id="convert-mi" class="button mi" onclick={miKm()}>Convert</button>
+                    <p>Mi = Km × 1,609</p>
+                </div>
+            </div>
+            <div class="converter kmmi" id="km-to-mi">
+                 <div class="form km">
+                    <h1 class="title km">Convert Kilometers to Miles
+                    </h1>
+                    <div id="result km">
+                        <h2 class="result value km" id="result-km">Result: </h2>
+                    </div>
+                    <div class="inputbox km">
+                        <label for="input-km"><i class="fad fa-map-marked-alt"></i></i></label>
+                        <input type="number" id="input-km" class="input" placeholder="Km to Mi" />
+                    </div>
+                    <button type="button" id="convert-km" class="button km" onclick={kmMi()}>Convert</button>
+                    <p>Km = Mi ÷ 1,609</p>
+                </div>
+        </div>
+        
+        <script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+    </body>
+</html>

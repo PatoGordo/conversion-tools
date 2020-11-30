@@ -1,0 +1,57 @@
+:root{
+    --tomato: tomato;
+    --little-boy-blue: #80a4edff;
+    --slate-blue: #725ac1ff;
+    --medium-aquamarine: #69dc9eff;
+    --indian-red: #d56062ff;
+    --pewter-blue: #90a9b7ff;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+}
+#root{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.mostused{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+    width: 60vw;
+    text-align: center;
+}
+.mostused h2{
+    text-align: center;
+}
+.mostitem{
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    color: #fff;
+}
+.mostitem.item1{
+    background-image: linear-gradient(to right, var(--tomato) , var(--little-boy-blue));
+}
+.mostitem.item2{
+    background-image: linear-gradient(to right, var(--little-boy-blue) , var(--tomato));
+}
+.mostitem.item3{
+    background-image: linear-gradient(to right, var(--slate-blue) , var(--medium-aquamarine));
+}
+.mostitem.item4{
+    background: linear-gradient(to right, var(--medium-aquamarine), var(--slate-blue));
+}
+.mostitem.item5{
+    background: linear-gradient(to right, var(--indian-red), var(--slate-blue));
+}
+
+@media screen and (max-width: 858px){
+    .mostused{
+        width: 90vw;
+    }
+}

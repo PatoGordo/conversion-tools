@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1"  />
+        
+        <link rel="stylesheet" href="css/styles.css" type="text/css" media="all" />
+        <link rel="stylesheet" href="../../src/css/styles.css" type="text/css" media="all" />
+        <link rel="stylesheet" href="../../src/css/navbar.css" type="text/css" media="all" />
+
+        
+        <script type="module" src="https://unpkg.com/ionicons@5.2.3/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule="" src="https://unpkg.com/ionicons@5.2.3/dist/ionicons/ionicons.js"></script>
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+        
+        <title> Conversion Tools - Fahrenheit to Celsius / Celsius to Fahrenheit </title>
+        
+        <script src="../../src/js/navbar.alt.js" type="text/javascript" charset="utf-8"></script>
+    </head>
+    <body>
+        <div id="root" class="root">
+            <div id="navbar"></div>
+            <div class="converter fc" id="f-to-c">
+                <div class="form f">
+                    <h1 class="title f">Convert °Fahrenheit to °Celsius</h1>
+                    <div id="result f">
+                        <h2 class="result value f" id="result-f">Result: </h2>
+                    </div>
+                    <div class="inputbox f">
+                        <label for="input-f"><i class="fal fa-thermometer-three-quarters"></i></label>
+                        <input type="number" id="input-f" class="input" placeholder="°F to °C" />
+                    </div>
+                    <button type="button" id="convert-f" class="button f" onclick={fC()}>Convert</button>
+                    <p>°F = (°C - 32) × 5÷9</p>
+                </div>
+            </div>
+            <div class="converter cf" id="c-to-f">
+                 <div class="form c">
+                    <h1 class="title c">Convert °Celsius to °Fahrenheit</h1>
+                    </h1>
+                    <div id="result c">
+                        <h2 class="result value c" id="result-c">Result: </h2>
+                    </div>
+                    <div class="inputbox c">
+                        <label for="input-c"><i class="fad fa-thermometer-three-quarters"></i></label>
+                        <input type="number" id="input-c" class="input" placeholder="°C to °F" />
+                    </div>
+                    <button type="button" id="convert-c" class="button c" onclick={cF()}>Convert</button>
+                    <p>°C = (5÷9 × °F + 32)</p>
+                </div>
+        </div>
+        
+        <script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+    </body>
+</html>
