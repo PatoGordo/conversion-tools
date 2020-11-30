@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1"  />
+        
+        <link rel="stylesheet" href="css/styles.css" type="text/css" media="all" />
+        <link rel="stylesheet" href="../../src/css/styles.css" type="text/css" media="all" />
+        <link rel="stylesheet" href="../../src/css/navbar.css" type="text/css" media="all" />
+
+        
+        <script type="module" src="https://unpkg.com/ionicons@5.2.3/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule="" src="https://unpkg.com/ionicons@5.2.3/dist/ionicons/ionicons.js"></script>
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+        
+        <title> Conversion Tools - In to Cm / Cm to In </title>
+        
+        <script src="../../src/js/navbar.alt.js" type="text/javascript" charset="utf-8"></script>
+    </head>
+    <body>
+        <div id="root" class="root">
+            <div id="navbar"></div>
+            <div class="converter incm" id="in-to-cm">
+                <div class="form in">
+                    <h1 class="title in">Convert In to Cm</h1>
+                    <div id="result in">
+                        <h2 class="result value in" id="result-in">Result: </h2>
+                    </div>
+                    <div class="inputbox in">
+                        <label for="input-in"><i class="fal fa-ruler-vertical"></i></label>
+                        <input type="number" id="input-in" class="input" placeholder="In to cm" />
+                    </div>
+                    <button type="button" id="convert-in" class="button in" onclick={inCm()}>Convert</button>
+                    <p>In = Cm × 2,54</p>
+                </div>
+            </div>
+            <div class="converter cmin" id="cm-to-in">
+                 <div class="form cm">
+                    <h1 class="title cm">Convert Cm to In</h1>
+                    <div id="result cm">
+                        <h2 class="result value cm" id="result-cm">Result: </h2>
+                    </div>
+                    <div class="inputbox cm">
+                        <label for="input-cm"><i class="fad fa-ruler-vertical"></i></label>
+                        <input type="number" id="input-cm" class="input" placeholder="Cm to in" />
+                    </div>
+                    <button type="button" id="convert-cm" class="button cm" onclick={cmIn()}>Convert</button>
+                    <p>Cm = In ÷ 2,54</p>
+                </div>
+        </div>
+        
+        <script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+    </body>
+</html>

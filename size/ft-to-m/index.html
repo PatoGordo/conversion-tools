@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1"  />
+        
+        <link rel="stylesheet" href="css/styles.css" type="text/css" media="all" />
+        <link rel="stylesheet" href="../../src/css/styles.css" type="text/css" media="all" />
+        <link rel="stylesheet" href="../../src/css/navbar.css" type="text/css" media="all" />
+
+        
+        <script type="module" src="https://unpkg.com/ionicons@5.2.3/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule="" src="https://unpkg.com/ionicons@5.2.3/dist/ionicons/ionicons.js"></script>
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+        
+        <title> Conversion Tools - Ft to M / Cm to M </title>
+        
+        <script src="../../src/js/navbar.alt.js" type="text/javascript" charset="utf-8"></script>
+    </head>
+    <body>
+        <div id="root" class="root">
+            <div id="navbar"></div>
+            <div class="converter ftm" id="ft-to-m">
+                <div class="form ft">
+                    <h1 class="title ft">Convert Ft to M</h1>
+                    <div id="result ft">
+                        <h2 class="result value ft" id="result-ft">Result: </h2>
+                    </div>
+                    <div class="inputbox ft">
+                        <label for="input-ft"><i class="fal fa-ruler-vertical"></i></label>
+                        <input type="number" id="input-ft" class="input" placeholder="Ft to m" />
+                    </div>
+                    <button type="button" id="convert-ft" class="button ft" onclick={ftM()}>Convert</button>
+                    <p>Ft = M ÷ 3,281</p>
+                </div>
+            </div>
+            <div class="converter mft" id="m-to-ft">
+                 <div class="form m">
+                    <h1 class="title m">Convert M to Ft</h1>
+                    <div id="result m">
+                        <h2 class="result value m" id="result-m">Result: </h2>
+                    </div>
+                    <div class="inputbox m">
+                        <label for="input-m"><i class="fad fa-ruler-vertical"></i></label>
+                        <input type="number" id="input-m" class="input" placeholder="M to ft" />
+                    </div>
+                    <button type="button" id="convert-m" class="button m" onclick={mFt()}>Convert</button>
+                    <p>M = Ft × 3,281</p>
+                </div>
+        </div>
+        
+        <script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+    </body>
+</html>
