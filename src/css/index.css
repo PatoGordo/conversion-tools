@@ -50,6 +50,49 @@ body{
     background: linear-gradient(to right, var(--indian-red), var(--slate-blue));
 }
 
+.dropbtn, .dropbtn2 {
+  background-color: #3498DB;
+  border-radius: 10px;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #2980B9;
+}
+.dropdown, .dropdown2{
+    position: relative;
+    display: inline-block;
+    margin: 10px;
+}
+.dropdown-content, .dropdown-content2 {
+    border-radius: 10px;
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdown-content a, .dropdown-content2 a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  border-radius: 10px;
+}
+.dropdown-content a:hover , .dropdown-content2 a:hover{
+    background-color: #ddd;
+}
+
+.show {
+    display: flex;
+    flex-direction: column;
+}
+
+
 @media screen and (max-width: 858px){
     .mostused{
         width: 90vw;
