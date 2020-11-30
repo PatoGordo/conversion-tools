@@ -8,9 +8,10 @@ document.querySelector("#navbar").innerHTML =
     <ul>
         <li><a href="../../index.html">Home</a></li>
         <li><a href="../../converters.html">Converters</a></li>
-        <li><a href="../../src/about.html">About</a></li>
-        <li><a href="../../src/feedback.html">FeedBack</a></li>
-        <li><a href="../../src/licenses.html">Licenses</a></li>
+        <li><a href="../../pages/about.html">About</a></li>
+        <li><a href="../../pages/feedback.html">FeedBack</a></li>
+        <li><a href="../../pages/suggestion.html">Suggestion</a></li>
+        <li><a href="../../pages/licenses.html">Licenses</a></li>
     </ul>
     </nav>
 `
