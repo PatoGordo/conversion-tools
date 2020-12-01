@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+:root{
+    --white: #fff;
+    
+    /*blue scheme*/
+    --egyptian-blue: #0a369dff;
+    --han-blue: #4472caff;
+    --glaucous: #5e7ce2ff;
+    --french-sky-blue: #92b4f4ff;
+    --beau-blue: #cfdee7ff;
+    
+    /*red scheme*/
+    --xiketic: #03071eff;
+    --dark-sienna: #370617ff;
+    --rosewood: #6a040fff;
+    --dark-red: #9d0208ff;
+    --rosso-corsa: #d00000ff;
+    --vermilion: #dc2f02ff;
+    --persimmon: #e85d04ff;
+    --carrot-orange: #f48c06ff;
+    --orange-web: #faa307ff;
+    --selective-yellow: #ffba08ff;
+}
+body{
+    width: 100vw;
+}
+#root{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+    outline: none;
+}
+.title{
+    font-family: 'Segoe UI';
+    text-align: center;
+}
+.title.blue{
+    color: var(--egyptian-blue);
+}
+.title.red{
+    color: var(--vermilion);
+}
+.inputbox{
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.inputbox.blue{
+    border: 2px dotted #0075F2;
+}
+.inputbox.red{
+    border: 2px dashed var(--carrot-orange);
+}
+.inputbox i{
+    margin-right: 5px;
+}
+.input{
+    border: 0;
+    width: 95%;
+}
+.button{
+    border: 0;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    align-self: center;
+}
+.button.blue{
+    background: var(--han-blue);
+    color: var(--white);
+}
+.button.red{
+    background: tomato;
+    color: var(--white);
+}
+.result.value{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 10px;
+}
+.result.value.blue{
+    color: var(--glaucous);
+}
+.result.value.red{
+    color: var(--persimmon);
+}
+.converter{
+    min-width: 360px;
+    max-width: 480px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+}
+.converter.bluered{
+    border: 2px dotted #0075f2;
+}
+.converter.redblue{
+    border: 2px dashed var(--carrot-orange);
+}
