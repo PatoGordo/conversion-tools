@@ -91,7 +91,9 @@ body{
     display: flex;
     flex-direction: column;
 }
-
+.c-item{
+    text-align: center;
+}
 
 @media screen and (max-width: 858px){
     .mostused{
