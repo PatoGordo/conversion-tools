@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1"  />
         <link rel="stylesheet" href="../src/css/styles.css" type="text/css" media="all" />
         <link rel="stylesheet" href="../src/css/navbar.css" type="text/css" media="all" />
+        <link rel="stylesheet" href="../src/css/feedback.css" type="text/css" media="all" />
 
         
         <script type="module" src="https://unpkg.com/ionicons@5.2.3/dist/ionicons/ionicons.esm.js"></script>
@@ -18,7 +19,31 @@
     <body>
         <div id="navbar"></div>
         <div class="root" id="root">
-            Feedback
+            <div class="form">
+            <form id="form-send">
+                <h2>Feedback me</h2>
+                <div class="inputbox">
+                    <label for="name"><i class="fal fa-user"></i></label>
+                    <input type="text" id="name" placeholder="Your Name" class="input" required/>
+                </div>
+                <div class="inputbox">
+                    <label for="email"><i class="fal fa-envelope"></i></label>
+                    <input type="email" id="email" placeholder="Your Email" class="input" required/>
+                </div>
+                <div class="inputbox">
+                    <label for="message"><i class="fal fa-edit"></i></label>
+                    <textarea id="message" rows="8" cols="22" placeholder="Your Message" class="input" required></textarea>
+                </div>
+                <button class="submit">Send</button>
+            </form>
+            </div>
         </div>
+        
+        <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-database.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-analytics.js"></script>
+        <script src="../src/services/firebase.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../src/js/feedback.js" type="text/javascript" charset="utf-8"></script>
     </body>
 </html>

@@ -12,7 +12,7 @@
         <script nomodule="" src="https://unpkg.com/ionicons@5.2.3/dist/ionicons/ionicons.js"></script>
         <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
         
-        <title> Conversion Tools - Suggestion </title>
+        <title> Conversion Tools - Misuse </title>
         
         <script src="../src/js/navbarpages.js" type="text/javascript" charset="utf-8"></script>
     </head>
@@ -21,18 +21,23 @@
         <div class="root" id="root">
             <div class="form">
             <form id="form-send">
-                <h2>Send me suggestions</h2>
+                <h2>Misuse Form</h2>
+                <p>If I have misused your product or service, fill out a form and I will contact you shortly.</p>
                 <div class="inputbox">
                     <label for="name"><i class="fal fa-user"></i></label>
                     <input type="text" id="name" placeholder="Your Name" class="input" required/>
                 </div>
                 <div class="inputbox">
                     <label for="email"><i class="fal fa-envelope"></i></label>
-                    <input type="email" id="email" placeholder="Your Email (not required)" class="input"/>
+                    <input type="email" id="email" placeholder="Your Email" class="input" required/>
                 </div>
                 <div class="inputbox">
-                    <label for="suggestion"><i class="fal fa-edit"></i></label>
-                    <textarea id="suggestion" rows="8" cols="22" placeholder="Your Suggestion" class="input" required></textarea>
+                    <label for="productorservice"><i class="fal fa-plus"></i></label>
+                    <input type="text" id="productorservice" placeholder="product or Service misused" class="input" required/>
+                </div>
+                <div class="inputbox">
+                    <label for="message"><i class="fal fa-edit"></i></label>
+                    <textarea id="message" rows="8" cols="22" placeholder="Your Message" class="input" required></textarea>
                 </div>
                 <button class="submit">Send</button>
             </form>
@@ -44,6 +49,6 @@
         <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-database.js"></script>
         <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-analytics.js"></script>
         <script src="../src/services/firebase.js" type="text/javascript" charset="utf-8"></script>
-        <script src="../src/js/suggestion.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../src/js/misuse.js" type="text/javascript" charset="utf-8"></script>
     </body>
 </html>

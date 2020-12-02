@@ -1,0 +1,25 @@
+body{
+    width: 100vw;
+}
+#root{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+}
+.about{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.about a{
+    text-align: center;
+}
+@media screen and (max-width: 858px){
+    .about{
+        width: 90%;
+    }
+}
