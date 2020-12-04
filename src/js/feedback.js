@@ -17,6 +17,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
         document.querySelector("#message").value = ''
     }
     var db = firebase.database()
+
     document.querySelector("#form-send").addEventListener("submit", (e)=>{
         e.preventDefault();
         Vars()

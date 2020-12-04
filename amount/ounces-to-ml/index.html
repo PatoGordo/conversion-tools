@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1"  />
+        
+        <link rel="stylesheet" href="../../src/css/styles.css" type="text/css" media="all" />
+        <link rel="stylesheet" href="../../src/css/convertersStyles.css" type="text/css" media="all" />
+        <link rel="stylesheet" href="../../src/css/navbar.css" type="text/css" media="all" />
+
+        
+        <script type="module" src="https://unpkg.com/ionicons@5.2.3/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule="" src="https://unpkg.com/ionicons@5.2.3/dist/ionicons/ionicons.js"></script>
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+        
+        <title> Conversion Tools - Ounces to Mililiters / Mililiters to Ounces </title>
+        
+        <script src="../../src/js/navbar.alt.js" type="text/javascript" charset="utf-8"></script>
+    </head>
+    <body>
+        <div id="navbar"></div>
+        <div id="root" class="root">
+            <div class="converter bluered">
+                <div class="form blue">
+                    <h1 class="title blue">Convert Ounces to Mililiters</h1>
+                    <div id="result blue">
+                        <h2 class="result value blue" id="result-blue">Result: </h2>
+                    </div>
+                    <div class="inputbox blue">
+                        <label for="input-blue"><i class="fal fa-prescription-bottle"></i></label>
+                        <input type="number" id="input-blue" class="input" placeholder="On to Ml" />
+                    </div>
+                    <button type="button" id="convert-blue" class="button blue" onclick={blueRed()}>Convert</button>
+                    <p>On = ml × 29.574</p>
+                </div>
+            </div>
+            <div class="converter redblue">
+                 <div class="form red">
+                    <h1 class="title red">Convert Mililiters to Ounces</h1>
+                    </h1>
+                    <div id="result red">
+                        <h2 class="result value red" id="result-red">Result: </h2>
+                    </div>
+                    <div class="inputbox red">
+                        <label for="input-red"><i class="fad fa-prescription-bottle"></i></label>
+                        <input type="number" id="input-red" class="input" placeholder="Ml to On" />
+                    </div>
+                    <button type="button" id="convert-red" class="button red" onclick={redBlue()}>Convert</button>
+                    <p>Ml = On ÷ 29.574</p>
+                </div>
+        </div>
+        
+        <script src="index.js" type="text/javascript" charset="utf-8"></script>
+    </body>
+</html>
