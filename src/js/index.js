@@ -1,4 +1,3 @@
-
 class SetData extends React.Component {
     state = {
         name: '',
@@ -19,7 +18,11 @@ class SetData extends React.Component {
     handleSubmit = e => {
         e.preventDefault()
         
-        axios.post('https://luxinhe-bot.herokuapp.com/setdata', {filename: this.state.name,username: this.state.author,fileUrl: this.state.url})
+        axios.post('https://luxinhe-bot.herokuapp.com/setdata', {
+            filename: this.state.name,
+            username: this.state.author,
+            fileUrl: this.state.url
+        })
         .then(res => {
             console.log(res)
             console.log(res.data)
